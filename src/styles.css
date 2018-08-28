@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+#container {
+    width: 100px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 22px;
+    color: #010000;
+    max-width: 2000px;
+    margin: auto;
+    padding: 0;
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #010000;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+}
+
+a,
+a:hover {
+    -webkit-transition: all, 4s ease-in-out;
+    -moz-transition: all, 4s ease-in-out;
+    transition: all, 4s ease-in-out;
+}
+
+app-header {
+    width: 100;
+    color: blue;
+    display: block;
+    height: 150px;
+    background-color: yellow;
+}
+
+app-header.logo img {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1600px) {
+    #container {
+        width: auto;
+        margin: 0 3%;
+    }
+}
+
+app-tab-nav {
+    display: initial-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #010000;
+}
+
+app-tab-nav,
+app-tab-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+app-tab-nav ul li {
+    display: inline;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+app-tab-nav ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px 20px;
+}
+
+app-tab-nav ul li a:hover {
+    background: grey;
+}
